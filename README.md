@@ -5,7 +5,7 @@ This repository contains a project for classifying chest X-ray images into three
 ---
 
 ## Features
-- **Dataset Preparation**: Automates the organization and splitting of the dataset into training and test sets.
+- **Dataset Preparation**: Organizing and splitting of the dataset into training and test sets.
 - **Transformations**: Applies image preprocessing and augmentation using PyTorch's `torchvision.transforms`.
 - **Training**: Implements a training loop with logging for losses and saves the model.
 - **Validation**: Includes validation during training with visual feedback on predictions.
@@ -62,6 +62,7 @@ Edit the script's `predict` function or provide a path to the desired image file
 
 - **`script.py`**: Main script for dataset preparation, training, and validation.
 - **`test.py`**: Script for loading a saved model and predicting the class of a single image.
+- **`Detect_Covid.ipynb`**: A notebook to see the analysis step by step.
 
 ---
 
@@ -76,12 +77,7 @@ Edit the script's `predict` function or provide a path to the desired image file
   - Resize images to `224x224`.
   - Normalize using ImageNet's mean and standard deviation.
   - Apply random horizontal flips (training only).
-
 ---
 
 - The dataset is sourced from [COVID-19 Radiography Database](https://www.kaggle.com/datasets/tawsifurrahman/covid19-radiography-database).
-
----
-
-For any issues, please open an issue or contact [your-email@example.com].
 
